@@ -1,0 +1,29 @@
+# ビルド成果物・一時ファイルを除外
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vscode/
+*.log
+*.tmp
+*.cache
+*.db
+*.DS_Store
+Thumbs.db
+# pdfiumなどバイナリDLLを除外
+PDFToImageMerger/bin/Debug/net9.0/pdfium.dll
+PDFToImageMerger/bin/Debug/net9.0/PdfiumViewer.dll
+PDFToImageMerger/bin/Debug/net9.0/SixLabors.ImageSharp.dll
+PDFToImageMerger/bin/Debug/net9.0/System.Drawing.Common.dll
+PDFToImageMerger/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+PDFToImageMerger/bin/Debug/net9.0/System.Private.Windows.Core.dll
+PDFToImageMerger/bin/Debug/net9.0/nl/
+PDFToImageMerger/bin/Debug/net9.0/runtimes/
+# ソース・プロジェクトファイルは除外しない
+!PDFToImageMerger/*.cs
+!PDFToImageMerger/*.csproj
+!*.sln
+!README.md
